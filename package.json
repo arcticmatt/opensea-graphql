@@ -1,0 +1,46 @@
+{
+  "name": "learn-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "eslint": "eslint --no-error-on-unmatched-pattern 'src/**/*.ts' 'src/**/*.tsx' 'pages/**/*.tsx'",
+    "graphql-gen": "get-graphql-schema https://api.opensea.io/graphql/ > schema.graphql",
+    "relay": "relay-compiler --src ./ --schema schema.graphql --language typescript --artifactDirectory ./src/__generated__",
+    "start": "next start"
+  },
+  "dependencies": {
+    "add": "^2.0.6",
+    "firebase": "9.0.0-beta.6",
+    "invariant": "^2.2.4",
+    "next": "^10.0.0",
+    "react": "^18.0.0-alpha-464f27572-20210713",
+    "react-dom": "^18.0.0-alpha-464f27572-20210713",
+    "react-relay": "^11.0.2",
+    "relay-runtime": "^11.0.2",
+    "yarn": "^1.22.10"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.14",
+    "@types/react-relay": "^11.0.2",
+    "@types/relay-runtime": "^11.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "babel-plugin-relay": "^11.0.2",
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "get-graphql-schema": "^2.1.2",
+    "prettier": "2.3.2",
+    "relay-compiler": "^11.0.2",
+    "relay-compiler-language-typescript": "^14.0.0",
+    "relay-config": "^11.0.2",
+    "typescript": "^4.3.5"
+  }
+}
